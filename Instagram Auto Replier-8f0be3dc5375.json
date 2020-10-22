@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "instagram-auto-replier",
+  "private_key_id": "8f0be3dc5375122cea46032a27c798468668ab80",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCqVa10Z/lQtU7L\nnhusO2g46CbAZqwfTKSTg/UTgDC+mvCyUC4zMBF5gry+2f/bBaRDTQp88xfLUSa0\nteD6NiswoUZT3o1BbfM8DMWXVrXG8RKyaKM5je5ObCVyrJdEct8pNHvhjfW93w+J\nuuwuj5YgVO+Lq5oJutamyKdyazX4PQi9xzqtgD051xrBK0ZJdbJ5pnBntyTwCLOr\njvSWaDWp6LeZRlshBGlGc38tOSHGx08NH66HnuJgMRm56/OkKBZ1nND8TeR38KO4\nUweQIIs6nWjaQ4isPlq6x11G6AAgucZJ8wWKqxN0LpMTYmuHOva6FXX2+gIFP5qw\nW6OfYH0DAgMBAAECggEAR2oWiCiTkfACMkJ+za42my1SGfayEYlbsvFvTha/2Roy\n8j/FrvZnTS+wHMBfkh+CaCkjzZFKF5dViAx9X8pYP1JOnxk+1gDYKwQbz8CuA9PN\nB/nw/U9xa3XSGYsc/LjAsZDso3uWXV3pMNCq9zaCNdoGeOOgeJXaKyETe1hRz1pu\n5EvMEmz1MUgwOzIcqUBLrYlerVoUYhdD2yFttbuIWUgwZS2MG8X77MOi6AFeUkRH\nU1kH9qyAkCKCAkUaBdD5bY0trKdxi56TBEv+PG33Wq6PC/LeXSaqg7KVpKBbOTC1\nCoGdAuzy9qxTTtT7gVNGt3Qo3grFAVluXTq+GB9HSQKBgQDuvMDHuofBEBlx40LW\n1MwmaH5iOh9LjH6S6eqfoWhMV4CCA/yZaHrn6+8gUFO/z/JZQOncqBbm5A/DxjFb\n9a5EtEfP01oLoTNf9fglp+CIG8iYJK3bXHqaHTXcUBOinCNopD2C89hxbskmdQHZ\nhIRDag7m02xWeedsYKFsAD4mjwKBgQC2prqWaDbKYqd2SCnvNJcqY+/AYBotG9cR\nOLMg6VLGZ2lgfkkG/4pMzwdedzC8DXKbCT3naqMhKm4H7z8VzhHGg57lBkiGvOSm\niboWMu6rIpPXg+YF2+sSoO5L98B+aSZYxcfsvZ5gIra22qeeJcs03crfR+SDJ457\nfIDcCbTcTQKBgA21MtCFClRwizV52hWhxFMUPuV+9tsMpxviaIFf8DAp+gv9FJzu\nXdhBOMq/Mf/afczYKFVuJVp+j9Uq5Ryln6r8Ov9Y4Fu4ls2UvvnSiNbn2X265Wyq\nA7QjpzsOMgJtOq9AdvO08qGYvd4Ca+fEbx+70D06uIbCmyIi7kHYRblLAoGAOpDf\nh1bHKsHTXHPrLk44olkFCTRHcGta3KTHmyf1aLTD7zLPC7VojRRdEoc5UzMkql2e\nQdPJltraCSVHnyBCRtrxWhJXswxibJwA1RljufAOY65hVUOc7o43mphIWsAwkYpp\nfpmWbND0sVEPKgCIVd1ALbQJq5xFbYcQcn2SRokCgYEAlLfR98rKmg051CK8w6QE\neI+rxmsMx5luFqSBdB4LwBqtxf/nNyqVCTSImnksdSnls7xFLzOYjkoNQuJZC5yK\nSJrgb8ktlegM9synhYobzFGU6fjLzVRPa/yBwLSafh5UC2fplgtBhqyhXT7VJE46\nOIaArElCF9InhE2r+YjnO0A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "eugene-lim@instagram-auto-replier.iam.gserviceaccount.com",
+  "client_id": "114902028558107441609",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/eugene-lim%40instagram-auto-replier.iam.gserviceaccount.com"
+}

@@ -3,7 +3,7 @@ import Login from './Login'
 function MainContainer() {
     return (
         <div className="main-container" >
-            <Login />
+            <Login className="login-container" />
         </div>
     )
 }
