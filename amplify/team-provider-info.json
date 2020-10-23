@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-igautoresponder-dev-42504-authRole",
+      "UnauthRoleArn": "arn:aws:iam::613277079966:role/amplify-igautoresponder-dev-42504-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::613277079966:role/amplify-igautoresponder-dev-42504-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-igautoresponder-dev-42504-deployment",
+      "UnauthRoleName": "amplify-igautoresponder-dev-42504-unauthRole",
+      "StackName": "amplify-igautoresponder-dev-42504",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:613277079966:stack/amplify-igautoresponder-dev-42504/abdcf9f0-14a4-11eb-88be-0288a276c75c",
+      "AmplifyAppId": "d14529d6qyf5xb"
+    }
+  }
+}

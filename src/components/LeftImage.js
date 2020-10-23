@@ -1,9 +1,7 @@
 import React from 'react'
 function LeftImage() {
     return (
-        <div className="left-image">
-            image is here
-        </div>
+        <img src="/background.png" className="left-image" />
     )
 }
 

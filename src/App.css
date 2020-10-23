@@ -8,7 +8,7 @@
 .left-image {
   flex: 0.4;
   height: 100vh;
-  background-color: teal;
+  border-right: 5px solid lightgrey;
 }
 .main-container {
   flex: 0.6;
