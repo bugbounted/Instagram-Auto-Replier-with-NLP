@@ -6,8 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import { StateProvider } from './StateProvider';
 import reducer, { initialState } from './reducer'
 import Amplify from 'aws-amplify';
-import config from './aws-exports';
-Amplify.configure(config);
+import awsmobile from './aws-exports';
+Amplify.configure(awsmobile);
 ReactDOM.render(
   <React.StrictMode>
     <StateProvider initialState={initialState} reducer={reducer}>
