@@ -4,14 +4,17 @@ import IgComments from './IgComments'
 import Navbar from './Navbar'
 import AutoResponder from './AutoResponder'
 import { BrowserRouter as Router } from 'react-router-dom'
-
+import { API } from 'aws-amplify';
+import { createUser } from '../../graphql/mutations'
+import { getUser } from '../../graphql/queries'
 function Login() {
     const [userInfo, setUserInfo] = useState({})
-    const [accessToken,] = useState('EAAJbQ5TUIvsBAOJbZCgWXFAR1v3ZCRq5ZBHQA7NzYUfhDc0bLQuBzbX2Fm9RMtWinpqo0IvwcCq3ZBIYZAXZAioHX29V4R9puJBZCrSaEqXmesZCaUCJjKL7twxuDKY8inFo7ZBKQjr3PxZCQQXobzvmvx87Ij8UtCmvuZCdEk0JMaTQ2f3lB6ZBwLHZC6eCFwKM3avaLuyAxCfiGZBsEP4XhAZBvJh')
+    const [accessToken,] = useState('EAAJbQ5TUIvsBAD8iu34QoWLiJUiBnvxOq2MERsknXzrjpakfYZAz3uSHgclWp9SWFF3ZBRwKEVtPSgRNSKGNBZArJQaPmDbcDmMyWZBF2MZBNc9CZBxstPRNHTwzDBcseOKuG8yJhvygRpW0KpOeH88ZBE4D1uRZCXk2PvL8wbJ5l7kWwqHHw4lNh0eyohEhG6VBIOmqpc92GopH1TqAZCtaZB')
     const [igPostIdArray, setIgPostIdArray] = useState([])
-    const responseFacebook = (response) => {
-
-        // console.log("User is currently logged in")
+    const responseFacebook = async (response) => {
+        // const userId = response.id
+        // const userData = await API.graphql({ query: { userId } })
+        // console.log(userData)
         let getFacebookIdUrl = `https://graph.facebook.com/v8.0/me/accounts?access_token=${accessToken}`
         fetch(getFacebookIdUrl)
             .then(data => data.json())
@@ -47,6 +50,10 @@ function Login() {
         Promise.all(promises).then(result =>
             setIgPostIdArray(result)
         )
+    }
+    async function getUser(userId) {
+        const userData = await API.graphql({ query: { userId } })
+        console.log("Here")
     }
     if (igPostIdArray.length === 0) {
         return (
