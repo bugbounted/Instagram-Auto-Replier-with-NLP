@@ -77,7 +77,7 @@
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "getPositiveList",
+          "name" : "getPositiveList1",
           "description" : null,
           "args" : [ {
             "name" : "id",
@@ -95,20 +95,20 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "PositiveList",
+            "name" : "PositiveList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "listPositiveLists",
+          "name" : "listPositiveList1s",
           "description" : null,
           "args" : [ {
             "name" : "filter",
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelPositiveListFilterInput",
+              "name" : "ModelPositiveList1FilterInput",
               "ofType" : null
             },
             "defaultValue" : null
@@ -133,13 +133,13 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "ModelPositiveListConnection",
+            "name" : "ModelPositiveList1Connection",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "getNegativeList",
+          "name" : "getNegativeList1",
           "description" : null,
           "args" : [ {
             "name" : "id",
@@ -157,20 +157,20 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "NegativeList",
+            "name" : "NegativeList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "listNegativeLists",
+          "name" : "listNegativeList1s",
           "description" : null,
           "args" : [ {
             "name" : "filter",
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNegativeListFilterInput",
+              "name" : "ModelNegativeList1FilterInput",
               "ofType" : null
             },
             "defaultValue" : null
@@ -195,7 +195,7 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "ModelNegativeListConnection",
+            "name" : "ModelNegativeList1Connection",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -233,7 +233,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "SCALAR",
-              "name" : "Int",
+              "name" : "String",
               "ofType" : null
             }
           },
@@ -256,7 +256,7 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelPositiveListFilterInput",
+              "name" : "ModelPositiveList1FilterInput",
               "ofType" : null
             },
             "defaultValue" : null
@@ -290,7 +290,7 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "ModelPositiveListConnection",
+            "name" : "ModelPositiveList1Connection",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -312,7 +312,7 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNegativeListFilterInput",
+              "name" : "ModelNegativeList1FilterInput",
               "ofType" : null
             },
             "defaultValue" : null
@@ -346,7 +346,7 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "ModelNegativeListConnection",
+            "name" : "ModelNegativeList1Connection",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -397,8 +397,8 @@
         "possibleTypes" : null
       }, {
         "kind" : "SCALAR",
-        "name" : "Int",
-        "description" : "Built-in Int",
+        "name" : "String",
+        "description" : "Built-in String",
         "fields" : null,
         "inputFields" : null,
         "interfaces" : null,
@@ -406,7 +406,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "OBJECT",
-        "name" : "ModelPositiveListConnection",
+        "name" : "ModelPositiveList1Connection",
         "description" : null,
         "fields" : [ {
           "name" : "items",
@@ -417,7 +417,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "OBJECT",
-              "name" : "PositiveList",
+              "name" : "PositiveList1",
               "ofType" : null
             }
           },
@@ -441,7 +441,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "OBJECT",
-        "name" : "PositiveList",
+        "name" : "PositiveList1",
         "description" : null,
         "fields" : [ {
           "name" : "id",
@@ -467,7 +467,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "SCALAR",
-              "name" : "Int",
+              "name" : "String",
               "ofType" : null
             }
           },
@@ -521,15 +521,6 @@
         } ],
         "inputFields" : null,
         "interfaces" : [ ],
-        "enumValues" : null,
-        "possibleTypes" : null
-      }, {
-        "kind" : "SCALAR",
-        "name" : "String",
-        "description" : "Built-in String",
-        "fields" : null,
-        "inputFields" : null,
-        "interfaces" : null,
         "enumValues" : null,
         "possibleTypes" : null
       }, {
@@ -619,7 +610,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "ModelPositiveListFilterInput",
+        "name" : "ModelPositiveList1FilterInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -636,7 +627,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelIntInput",
+            "name" : "ModelStringInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -657,7 +648,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelPositiveListFilterInput",
+              "name" : "ModelPositiveList1FilterInput",
               "ofType" : null
             }
           },
@@ -670,7 +661,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelPositiveListFilterInput",
+              "name" : "ModelPositiveList1FilterInput",
               "ofType" : null
             }
           },
@@ -680,7 +671,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelPositiveListFilterInput",
+            "name" : "ModelPositiveList1FilterInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -963,96 +954,11 @@
         "enumValues" : null,
         "possibleTypes" : null
       }, {
-        "kind" : "INPUT_OBJECT",
-        "name" : "ModelIntInput",
-        "description" : null,
+        "kind" : "SCALAR",
+        "name" : "Int",
+        "description" : "Built-in Int",
         "fields" : null,
-        "inputFields" : [ {
-          "name" : "ne",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "Int",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "eq",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "Int",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "le",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "Int",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "lt",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "Int",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "ge",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "Int",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "gt",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "Int",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "between",
-          "description" : null,
-          "type" : {
-            "kind" : "LIST",
-            "name" : null,
-            "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "Int",
-              "ofType" : null
-            }
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "attributeExists",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "Boolean",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "attributeType",
-          "description" : null,
-          "type" : {
-            "kind" : "ENUM",
-            "name" : "ModelAttributeTypes",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        } ],
+        "inputFields" : null,
         "interfaces" : null,
         "enumValues" : null,
         "possibleTypes" : null
@@ -1207,7 +1113,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "OBJECT",
-        "name" : "ModelNegativeListConnection",
+        "name" : "ModelNegativeList1Connection",
         "description" : null,
         "fields" : [ {
           "name" : "items",
@@ -1218,7 +1124,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "OBJECT",
-              "name" : "NegativeList",
+              "name" : "NegativeList1",
               "ofType" : null
             }
           },
@@ -1242,7 +1148,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "OBJECT",
-        "name" : "NegativeList",
+        "name" : "NegativeList1",
         "description" : null,
         "fields" : [ {
           "name" : "id",
@@ -1268,7 +1174,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "SCALAR",
-              "name" : "Int",
+              "name" : "String",
               "ofType" : null
             }
           },
@@ -1326,7 +1232,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "ModelNegativeListFilterInput",
+        "name" : "ModelNegativeList1FilterInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -1343,7 +1249,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelIntInput",
+            "name" : "ModelStringInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -1364,7 +1270,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNegativeListFilterInput",
+              "name" : "ModelNegativeList1FilterInput",
               "ofType" : null
             }
           },
@@ -1377,7 +1283,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNegativeListFilterInput",
+              "name" : "ModelNegativeList1FilterInput",
               "ofType" : null
             }
           },
@@ -1387,7 +1293,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelNegativeListFilterInput",
+            "name" : "ModelNegativeList1FilterInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -1449,7 +1355,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelIntInput",
+            "name" : "ModelStringInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -1596,7 +1502,7 @@
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "createPositiveList",
+          "name" : "createPositiveList1",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -1606,7 +1512,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "CreatePositiveListInput",
+                "name" : "CreatePositiveList1Input",
                 "ofType" : null
               }
             },
@@ -1616,20 +1522,20 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelPositiveListConditionInput",
+              "name" : "ModelPositiveList1ConditionInput",
               "ofType" : null
             },
             "defaultValue" : null
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "PositiveList",
+            "name" : "PositiveList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "updatePositiveList",
+          "name" : "updatePositiveList1",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -1639,7 +1545,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "UpdatePositiveListInput",
+                "name" : "UpdatePositiveList1Input",
                 "ofType" : null
               }
             },
@@ -1649,20 +1555,20 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelPositiveListConditionInput",
+              "name" : "ModelPositiveList1ConditionInput",
               "ofType" : null
             },
             "defaultValue" : null
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "PositiveList",
+            "name" : "PositiveList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "deletePositiveList",
+          "name" : "deletePositiveList1",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -1672,7 +1578,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "DeletePositiveListInput",
+                "name" : "DeletePositiveList1Input",
                 "ofType" : null
               }
             },
@@ -1682,20 +1588,20 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelPositiveListConditionInput",
+              "name" : "ModelPositiveList1ConditionInput",
               "ofType" : null
             },
             "defaultValue" : null
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "PositiveList",
+            "name" : "PositiveList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "createNegativeList",
+          "name" : "createNegativeList1",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -1705,7 +1611,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "CreateNegativeListInput",
+                "name" : "CreateNegativeList1Input",
                 "ofType" : null
               }
             },
@@ -1715,20 +1621,20 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNegativeListConditionInput",
+              "name" : "ModelNegativeList1ConditionInput",
               "ofType" : null
             },
             "defaultValue" : null
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "NegativeList",
+            "name" : "NegativeList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "updateNegativeList",
+          "name" : "updateNegativeList1",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -1738,7 +1644,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "UpdateNegativeListInput",
+                "name" : "UpdateNegativeList1Input",
                 "ofType" : null
               }
             },
@@ -1748,20 +1654,20 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNegativeListConditionInput",
+              "name" : "ModelNegativeList1ConditionInput",
               "ofType" : null
             },
             "defaultValue" : null
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "NegativeList",
+            "name" : "NegativeList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "deleteNegativeList",
+          "name" : "deleteNegativeList1",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -1771,7 +1677,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "DeleteNegativeListInput",
+                "name" : "DeleteNegativeList1Input",
                 "ofType" : null
               }
             },
@@ -1781,14 +1687,14 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNegativeListConditionInput",
+              "name" : "ModelNegativeList1ConditionInput",
               "ofType" : null
             },
             "defaultValue" : null
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "NegativeList",
+            "name" : "NegativeList1",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -1820,7 +1726,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "SCALAR",
-              "name" : "Int",
+              "name" : "String",
               "ofType" : null
             }
           },
@@ -1839,7 +1745,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelIntInput",
+            "name" : "ModelStringInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -1905,7 +1811,7 @@
           "description" : null,
           "type" : {
             "kind" : "SCALAR",
-            "name" : "Int",
+            "name" : "String",
             "ofType" : null
           },
           "defaultValue" : null
@@ -1933,7 +1839,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "CreatePositiveListInput",
+        "name" : "CreatePositiveList1Input",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -1953,7 +1859,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "SCALAR",
-              "name" : "Int",
+              "name" : "String",
               "ofType" : null
             }
           },
@@ -1977,7 +1883,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "ModelPositiveListConditionInput",
+        "name" : "ModelPositiveList1ConditionInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -1985,7 +1891,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelIntInput",
+            "name" : "ModelStringInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -2006,7 +1912,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelPositiveListConditionInput",
+              "name" : "ModelPositiveList1ConditionInput",
               "ofType" : null
             }
           },
@@ -2019,7 +1925,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelPositiveListConditionInput",
+              "name" : "ModelPositiveList1ConditionInput",
               "ofType" : null
             }
           },
@@ -2029,7 +1935,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelPositiveListConditionInput",
+            "name" : "ModelPositiveList1ConditionInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -2039,7 +1945,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "UpdatePositiveListInput",
+        "name" : "UpdatePositiveList1Input",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -2060,7 +1966,7 @@
           "description" : null,
           "type" : {
             "kind" : "SCALAR",
-            "name" : "Int",
+            "name" : "String",
             "ofType" : null
           },
           "defaultValue" : null
@@ -2079,7 +1985,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "DeletePositiveListInput",
+        "name" : "DeletePositiveList1Input",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -2097,7 +2003,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "CreateNegativeListInput",
+        "name" : "CreateNegativeList1Input",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -2117,7 +2023,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "SCALAR",
-              "name" : "Int",
+              "name" : "String",
               "ofType" : null
             }
           },
@@ -2141,7 +2047,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "ModelNegativeListConditionInput",
+        "name" : "ModelNegativeList1ConditionInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -2149,7 +2055,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelIntInput",
+            "name" : "ModelStringInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -2170,7 +2076,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNegativeListConditionInput",
+              "name" : "ModelNegativeList1ConditionInput",
               "ofType" : null
             }
           },
@@ -2183,7 +2089,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNegativeListConditionInput",
+              "name" : "ModelNegativeList1ConditionInput",
               "ofType" : null
             }
           },
@@ -2193,7 +2099,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelNegativeListConditionInput",
+            "name" : "ModelNegativeList1ConditionInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -2203,7 +2109,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "UpdateNegativeListInput",
+        "name" : "UpdateNegativeList1Input",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -2224,7 +2130,7 @@
           "description" : null,
           "type" : {
             "kind" : "SCALAR",
-            "name" : "Int",
+            "name" : "String",
             "ofType" : null
           },
           "defaultValue" : null
@@ -2243,7 +2149,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "DeleteNegativeListInput",
+        "name" : "DeleteNegativeList1Input",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -2297,67 +2203,67 @@
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onCreatePositiveList",
+          "name" : "onCreatePositiveList1",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "PositiveList",
+            "name" : "PositiveList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onUpdatePositiveList",
+          "name" : "onUpdatePositiveList1",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "PositiveList",
+            "name" : "PositiveList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onDeletePositiveList",
+          "name" : "onDeletePositiveList1",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "PositiveList",
+            "name" : "PositiveList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onCreateNegativeList",
+          "name" : "onCreateNegativeList1",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "NegativeList",
+            "name" : "NegativeList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onUpdateNegativeList",
+          "name" : "onUpdateNegativeList1",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "NegativeList",
+            "name" : "NegativeList1",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onDeleteNegativeList",
+          "name" : "onDeleteNegativeList1",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "NegativeList",
+            "name" : "NegativeList1",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -2512,6 +2418,100 @@
         "description" : "Built-in Float",
         "fields" : null,
         "inputFields" : null,
+        "interfaces" : null,
+        "enumValues" : null,
+        "possibleTypes" : null
+      }, {
+        "kind" : "INPUT_OBJECT",
+        "name" : "ModelIntInput",
+        "description" : null,
+        "fields" : null,
+        "inputFields" : [ {
+          "name" : "ne",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "Int",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
+          "name" : "eq",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "Int",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
+          "name" : "le",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "Int",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
+          "name" : "lt",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "Int",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
+          "name" : "ge",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "Int",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
+          "name" : "gt",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "Int",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
+          "name" : "between",
+          "description" : null,
+          "type" : {
+            "kind" : "LIST",
+            "name" : null,
+            "ofType" : {
+              "kind" : "SCALAR",
+              "name" : "Int",
+              "ofType" : null
+            }
+          },
+          "defaultValue" : null
+        }, {
+          "name" : "attributeExists",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "Boolean",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
+          "name" : "attributeType",
+          "description" : null,
+          "type" : {
+            "kind" : "ENUM",
+            "name" : "ModelAttributeTypes",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        } ],
         "interfaces" : null,
         "enumValues" : null,
         "possibleTypes" : null
@@ -3370,6 +3370,23 @@
         "onFragment" : false,
         "onField" : false
       }, {
+        "name" : "deprecated",
+        "description" : null,
+        "locations" : [ "FIELD_DEFINITION", "ENUM_VALUE" ],
+        "args" : [ {
+          "name" : "reason",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "String",
+            "ofType" : null
+          },
+          "defaultValue" : "\"No longer supported\""
+        } ],
+        "onOperation" : false,
+        "onFragment" : false,
+        "onField" : false
+      }, {
         "name" : "aws_api_key",
         "description" : "Tells the service this field/object has access authorized by an API key.",
         "locations" : [ "OBJECT", "FIELD_DEFINITION" ],
@@ -3394,23 +3411,6 @@
             }
           },
           "defaultValue" : null
-        } ],
-        "onOperation" : false,
-        "onFragment" : false,
-        "onField" : false
-      }, {
-        "name" : "deprecated",
-        "description" : null,
-        "locations" : [ "FIELD_DEFINITION", "ENUM_VALUE" ],
-        "args" : [ {
-          "name" : "reason",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "String",
-            "ofType" : null
-          },
-          "defaultValue" : "\"No longer supported\""
         } ],
         "onOperation" : false,
         "onFragment" : false,

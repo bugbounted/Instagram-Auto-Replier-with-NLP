@@ -54,9 +54,9 @@ export const listUsers = /* GraphQL */ `
     }
   }
 `;
-export const getPositiveList = /* GraphQL */ `
-  query GetPositiveList($id: ID!) {
-    getPositiveList(id: $id) {
+export const getPositiveList1 = /* GraphQL */ `
+  query GetPositiveList1($id: ID!) {
+    getPositiveList1(id: $id) {
       id
       userId
       replies
@@ -65,13 +65,13 @@ export const getPositiveList = /* GraphQL */ `
     }
   }
 `;
-export const listPositiveLists = /* GraphQL */ `
-  query ListPositiveLists(
-    $filter: ModelPositiveListFilterInput
+export const listPositiveList1s = /* GraphQL */ `
+  query ListPositiveList1s(
+    $filter: ModelPositiveList1FilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listPositiveLists(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listPositiveList1s(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         userId
@@ -83,9 +83,9 @@ export const listPositiveLists = /* GraphQL */ `
     }
   }
 `;
-export const getNegativeList = /* GraphQL */ `
-  query GetNegativeList($id: ID!) {
-    getNegativeList(id: $id) {
+export const getNegativeList1 = /* GraphQL */ `
+  query GetNegativeList1($id: ID!) {
+    getNegativeList1(id: $id) {
       id
       userId
       replies
@@ -94,13 +94,13 @@ export const getNegativeList = /* GraphQL */ `
     }
   }
 `;
-export const listNegativeLists = /* GraphQL */ `
-  query ListNegativeLists(
-    $filter: ModelNegativeListFilterInput
+export const listNegativeList1s = /* GraphQL */ `
+  query ListNegativeList1s(
+    $filter: ModelNegativeList1FilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listNegativeLists(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listNegativeList1s(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         userId

@@ -1,17 +1,17 @@
 type User @model {
   id: ID!
   userId: String!
-  postiveReplies: [PositiveList] @connection(keyName: "positive", fields: ["userId"])
-  negativeReplies: [NegativeList] @connection(keyName: "negative", fields:["userId"])
+  postiveReplies: [PositiveList1] @connection(keyName: "positive", fields: ["userId"])
+  negativeReplies: [NegativeList1] @connection(keyName: "negative", fields:["userId"])
 }
 
-type PositiveList @model @key(name: "positive", fields: ["userId", "replies"]) {
+type PositiveList1 @model @key(name: "positive", fields: ["userId", "replies"]) {
   id: ID!
   userId: String!
   replies: String!
 }
 
-type NegativeList @model @key(name: "negative", fields: ["userId", "replies"]) {
+type NegativeList1 @model @key(name: "negative", fields: ["userId", "replies"]) {
   id: ID!
   userId: String!
   replies: String!

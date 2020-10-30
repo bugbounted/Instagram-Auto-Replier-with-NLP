@@ -91,9 +91,9 @@ export const onDeleteUser = /* GraphQL */ `
     }
   }
 `;
-export const onCreatePositiveList = /* GraphQL */ `
-  subscription OnCreatePositiveList {
-    onCreatePositiveList {
+export const onCreatePositiveList1 = /* GraphQL */ `
+  subscription OnCreatePositiveList1 {
+    onCreatePositiveList1 {
       id
       userId
       replies
@@ -102,9 +102,9 @@ export const onCreatePositiveList = /* GraphQL */ `
     }
   }
 `;
-export const onUpdatePositiveList = /* GraphQL */ `
-  subscription OnUpdatePositiveList {
-    onUpdatePositiveList {
+export const onUpdatePositiveList1 = /* GraphQL */ `
+  subscription OnUpdatePositiveList1 {
+    onUpdatePositiveList1 {
       id
       userId
       replies
@@ -113,9 +113,9 @@ export const onUpdatePositiveList = /* GraphQL */ `
     }
   }
 `;
-export const onDeletePositiveList = /* GraphQL */ `
-  subscription OnDeletePositiveList {
-    onDeletePositiveList {
+export const onDeletePositiveList1 = /* GraphQL */ `
+  subscription OnDeletePositiveList1 {
+    onDeletePositiveList1 {
       id
       userId
       replies
@@ -124,9 +124,9 @@ export const onDeletePositiveList = /* GraphQL */ `
     }
   }
 `;
-export const onCreateNegativeList = /* GraphQL */ `
-  subscription OnCreateNegativeList {
-    onCreateNegativeList {
+export const onCreateNegativeList1 = /* GraphQL */ `
+  subscription OnCreateNegativeList1 {
+    onCreateNegativeList1 {
       id
       userId
       replies
@@ -135,9 +135,9 @@ export const onCreateNegativeList = /* GraphQL */ `
     }
   }
 `;
-export const onUpdateNegativeList = /* GraphQL */ `
-  subscription OnUpdateNegativeList {
-    onUpdateNegativeList {
+export const onUpdateNegativeList1 = /* GraphQL */ `
+  subscription OnUpdateNegativeList1 {
+    onUpdateNegativeList1 {
       id
       userId
       replies
@@ -146,9 +146,9 @@ export const onUpdateNegativeList = /* GraphQL */ `
     }
   }
 `;
-export const onDeleteNegativeList = /* GraphQL */ `
-  subscription OnDeleteNegativeList {
-    onDeleteNegativeList {
+export const onDeleteNegativeList1 = /* GraphQL */ `
+  subscription OnDeleteNegativeList1 {
+    onDeleteNegativeList1 {
       id
       userId
       replies

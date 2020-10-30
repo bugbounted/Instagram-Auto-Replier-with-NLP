@@ -100,12 +100,12 @@ export const deleteUser = /* GraphQL */ `
     }
   }
 `;
-export const createPositiveList = /* GraphQL */ `
-  mutation CreatePositiveList(
-    $input: CreatePositiveListInput!
-    $condition: ModelPositiveListConditionInput
+export const createPositiveList1 = /* GraphQL */ `
+  mutation CreatePositiveList1(
+    $input: CreatePositiveList1Input!
+    $condition: ModelPositiveList1ConditionInput
   ) {
-    createPositiveList(input: $input, condition: $condition) {
+    createPositiveList1(input: $input, condition: $condition) {
       id
       userId
       replies
@@ -114,12 +114,12 @@ export const createPositiveList = /* GraphQL */ `
     }
   }
 `;
-export const updatePositiveList = /* GraphQL */ `
-  mutation UpdatePositiveList(
-    $input: UpdatePositiveListInput!
-    $condition: ModelPositiveListConditionInput
+export const updatePositiveList1 = /* GraphQL */ `
+  mutation UpdatePositiveList1(
+    $input: UpdatePositiveList1Input!
+    $condition: ModelPositiveList1ConditionInput
   ) {
-    updatePositiveList(input: $input, condition: $condition) {
+    updatePositiveList1(input: $input, condition: $condition) {
       id
       userId
       replies
@@ -128,12 +128,12 @@ export const updatePositiveList = /* GraphQL */ `
     }
   }
 `;
-export const deletePositiveList = /* GraphQL */ `
-  mutation DeletePositiveList(
-    $input: DeletePositiveListInput!
-    $condition: ModelPositiveListConditionInput
+export const deletePositiveList1 = /* GraphQL */ `
+  mutation DeletePositiveList1(
+    $input: DeletePositiveList1Input!
+    $condition: ModelPositiveList1ConditionInput
   ) {
-    deletePositiveList(input: $input, condition: $condition) {
+    deletePositiveList1(input: $input, condition: $condition) {
       id
       userId
       replies
@@ -142,12 +142,12 @@ export const deletePositiveList = /* GraphQL */ `
     }
   }
 `;
-export const createNegativeList = /* GraphQL */ `
-  mutation CreateNegativeList(
-    $input: CreateNegativeListInput!
-    $condition: ModelNegativeListConditionInput
+export const createNegativeList1 = /* GraphQL */ `
+  mutation CreateNegativeList1(
+    $input: CreateNegativeList1Input!
+    $condition: ModelNegativeList1ConditionInput
   ) {
-    createNegativeList(input: $input, condition: $condition) {
+    createNegativeList1(input: $input, condition: $condition) {
       id
       userId
       replies
@@ -156,12 +156,12 @@ export const createNegativeList = /* GraphQL */ `
     }
   }
 `;
-export const updateNegativeList = /* GraphQL */ `
-  mutation UpdateNegativeList(
-    $input: UpdateNegativeListInput!
-    $condition: ModelNegativeListConditionInput
+export const updateNegativeList1 = /* GraphQL */ `
+  mutation UpdateNegativeList1(
+    $input: UpdateNegativeList1Input!
+    $condition: ModelNegativeList1ConditionInput
   ) {
-    updateNegativeList(input: $input, condition: $condition) {
+    updateNegativeList1(input: $input, condition: $condition) {
       id
       userId
       replies
@@ -170,12 +170,12 @@ export const updateNegativeList = /* GraphQL */ `
     }
   }
 `;
-export const deleteNegativeList = /* GraphQL */ `
-  mutation DeleteNegativeList(
-    $input: DeleteNegativeListInput!
-    $condition: ModelNegativeListConditionInput
+export const deleteNegativeList1 = /* GraphQL */ `
+  mutation DeleteNegativeList1(
+    $input: DeleteNegativeList1Input!
+    $condition: ModelNegativeList1ConditionInput
   ) {
-    deleteNegativeList(input: $input, condition: $condition) {
+    deleteNegativeList1(input: $input, condition: $condition) {
       id
       userId
       replies
