@@ -68,7 +68,7 @@ function Login() {
                     Instagram Auto Responder
                 </h2>
                 <br />
-                <h4 style={{ color: "maroon", maxWidth: '370px' }}>You will need an Instagram Business Account to access this project due to Instgram Graph API restrictions</h4>
+                <h4 style={{ color: "maroon", maxWidth: '370px' }}>You will need an Instagram Business Account to access this project due to Instgram Graph API restrictions.</h4>
                 <br />
                 <h4>Preview <a href="https://github.com/exhlim/sei24-project4">here</a></h4>
                 <br />
