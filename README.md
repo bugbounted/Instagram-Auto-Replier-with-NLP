@@ -33,8 +33,11 @@ Replies can either be cycled through or randomized to reduce the presence of a b
 ### Facebook login retreving Instagram Posts and Comments ###
 ![](./public/login.gif)
 
-### Replying to comments with a sentiment value > 0.7 ###
+### Replying to positive comments with a sentiment value > 0.7 ###
 ![](./public/positive.gif)
+
+### Replying to negative comments with a sentiment value < -0.5 ###
+![](./public/negative.gif)
 
 ## Credits ##
 
