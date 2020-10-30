@@ -1,6 +1,6 @@
 # Instagram Auto Replier with Natural Language Processing
 
-## About ##
+## About
 
 Hosted [here](https://master.d14529d6qyf5xb.amplifyapp.com/) on AWS. (Preview below)
 
@@ -18,7 +18,7 @@ Example:
 
 Replies can either be cycled through or randomized to reduce the presence of a bot and to make replies more human.
 
-## Technologies Used ##
+## Technologies Used
 
 1. React
 2. AWS hosting
@@ -28,17 +28,24 @@ Replies can either be cycled through or randomized to reduce the presence of a b
 6. Instagram Graph API
 7. Google Cloud Platform Natural Language API
 
-## Preview ##
+## Previews
+  * [Facebook login](#facebook-login-retreving-instagram-posts-and-comments)
+  * [Replying to positive comments](#replying-to-positive-comments-with-a-sentiment-value->-0.7)
+  * [Replying to negative comments](#replying-to-negative-comments-with-a-sentiment-value-<--0.5)
+  * [Replying to individual comments](#replying-to-individual-comments)
 
-### Facebook login retreving Instagram Posts and Comments ###
+## Facebook login retreving Instagram Posts and Comments
 ![](./public/login.gif)
 
-### Replying to positive comments with a sentiment value > 0.7 ###
+## Replying to positive comments with a sentiment value > 0.7
 ![](./public/positive.gif)
 
-### Replying to negative comments with a sentiment value < -0.5 ###
+## Replying to negative comments with a sentiment value < -0.5
 ![](./public/negative.gif)
 
-## Credits ##
+## Replying to individual comments
+![](./public/individual.gif)
+
+## Credits
 
 Developers: exhlim (Eugene Lim) © 2020
