@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 function CommentForm({ comment, commentId, actualComment }) {
     const [indComment, setIndComment] = useState('')
-    const [accessToken,] = useState('EAAJbQ5TUIvsBAMZBVqVDxZAIhNqEDrtUYfZCk7ZAkCJ5KIZC0M4XsL6nKZCklZC1SiZBHJb1La5wEjB7Q5tewWIpxQZBRGxVJi972PmvZCArvSlXuQpAxw5dSr5W2aWJZBJpjPWMM9nfUBgZBZCB804upyCyg72DCZANI6UMHuKui5naxErRDubyqb0KSejdaywxxOMDMMeJCRBjYZA78mGZAcBkvnRb')
+    const [accessToken,] = useState('EAAJbQ5TUIvsBAPSIWZC6eLV7jsqgIidxC9ZArAWgT5h0VC5bsXB9Acl8ZBpworBICGpQn6LHn6vcJC4F7B9ZCpKtatDFnC8APKpbQOXGcV7iOSsNC2DBha4EZCAi0tCZAuMs6M31EcQJyJns7IoRbNLCrDVJdUDP1E7q8FuoF6vd3v9RkwZCg9w8QKG0LqjDdJcZBVA1rhH7gpsfMIwSZAIuA')
     const handleSubmit = (e) => {
         e.preventDefault()
         if (indComment.length !== 0) {
@@ -23,7 +23,7 @@ function CommentForm({ comment, commentId, actualComment }) {
         <>
             <form onSubmit={handleSubmit} >
                 <input value={indComment} name="comment" onChange={handleChange} placeholder="Input message here" className="reply-field" />
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Send ➤" className="submit-button" />
             </form>
         </>
     )

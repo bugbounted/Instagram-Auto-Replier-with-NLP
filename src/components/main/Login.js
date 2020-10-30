@@ -12,13 +12,13 @@ const userTemplate = { userId: '', positiveReplies: [], negativeReplies: [] }
 
 function Login() {
     const [userInfo, setUserInfo] = useState(userTemplate)
-    const [accessToken,] = useState('EAAJbQ5TUIvsBAMZBVqVDxZAIhNqEDrtUYfZCk7ZAkCJ5KIZC0M4XsL6nKZCklZC1SiZBHJb1La5wEjB7Q5tewWIpxQZBRGxVJi972PmvZCArvSlXuQpAxw5dSr5W2aWJZBJpjPWMM9nfUBgZBZCB804upyCyg72DCZANI6UMHuKui5naxErRDubyqb0KSejdaywxxOMDMMeJCRBjYZA78mGZAcBkvnRb')
+    const [accessToken,] = useState('EAAJbQ5TUIvsBAPSIWZC6eLV7jsqgIidxC9ZArAWgT5h0VC5bsXB9Acl8ZBpworBICGpQn6LHn6vcJC4F7B9ZCpKtatDFnC8APKpbQOXGcV7iOSsNC2DBha4EZCAi0tCZAuMs6M31EcQJyJns7IoRbNLCrDVJdUDP1E7q8FuoF6vd3v9RkwZCg9w8QKG0LqjDdJcZBVA1rhH7gpsfMIwSZAIuA')
     const [igPostIdArray, setIgPostIdArray] = useState([])
     const responseFacebook = async (response) => {
-        setUserInfo({ ...userInfo, 'userId': response.id })
-        await API.graphql({ query: createUser, variables: { input: userInfo } })
+        // setUserInfo({ ...userInfo, 'userId': response.id })
+        // await API.graphql({ query: createUser, variables: { input: userInfo } })
         // await API.graphql({ query: createNoteMutation, variables: { input: formData } });
-        const userData = await API.graphql({ query: getUser })
+        // const userData = await API.graphql({ query: getUser })
         // console.log(userData)
         // await API.graphql({ query: createUser, varaibles: { input: response.id } })
         // console.log(userData)
@@ -68,9 +68,9 @@ function Login() {
                     Instagram Auto Responder
                 </h2>
                 <br />
-                <h4 style={{ color: "maroon", maxWidth: '370px' }}>You will need an Instagram Business Account to access this project due to Instgram Graph API restrictions.</h4>
+                <h4 style={{ color: "maroon", maxWidth: '430px', marginLeft: '-20px', marginRight: '-20px' }}>You will need an Instagram Business Account to access this project due to Instgram Graph API restrictions.</h4>
                 <br />
-                <h4>Preview <a href="https://github.com/exhlim/sei24-project4">here</a></h4>
+                <h4>Preview <a href="https://github.com/exhlim/Instagram-Auto-Replier-with-NLP">here</a></h4>
                 <br />
                 <FacebookLogin
                     appId="663295771288315"

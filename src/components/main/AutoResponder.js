@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap'
 function AutoResponder({ sentiments, comments }) {
     let responsePositive = []
     let responseNegative = []
-    const [accessToken,] = useState('EAAJbQ5TUIvsBAMZBVqVDxZAIhNqEDrtUYfZCk7ZAkCJ5KIZC0M4XsL6nKZCklZC1SiZBHJb1La5wEjB7Q5tewWIpxQZBRGxVJi972PmvZCArvSlXuQpAxw5dSr5W2aWJZBJpjPWMM9nfUBgZBZCB804upyCyg72DCZANI6UMHuKui5naxErRDubyqb0KSejdaywxxOMDMMeJCRBjYZA78mGZAcBkvnRb')
-    console.log(sentiments)
-    console.log(comments)
+    const [accessToken,] = useState('EAAJbQ5TUIvsBAPSIWZC6eLV7jsqgIidxC9ZArAWgT5h0VC5bsXB9Acl8ZBpworBICGpQn6LHn6vcJC4F7B9ZCpKtatDFnC8APKpbQOXGcV7iOSsNC2DBha4EZCAi0tCZAuMs6M31EcQJyJns7IoRbNLCrDVJdUDP1E7q8FuoF6vd3v9RkwZCg9w8QKG0LqjDdJcZBVA1rhH7gpsfMIwSZAIuA')
+    // console.log(sentiments)
+    // console.log(comments)
     const [positiveArray, setPositiveArray] = useState(["Thank you for your support! We have something new coming up soon, so do check us out regularly!", "🔥🔥🔥", "Dont forget to recommend us to your friends!"])
     const [negativeArray, setNegativeArray] = useState(["Hi thank you for your feed back. We will strive to improve!"])
     const badResponse = "Replied when sentiments < -0.5"
@@ -46,7 +46,7 @@ function AutoResponder({ sentiments, comments }) {
     return (
         <>
             <div>
-                <h3 >Auto Responder</h3>
+                <h2 style={{ textDecoration: "underline" }}>Auto Responder</h2>
                 <span style={{ color: "green" }}>Replied when sentiments > 0.7</span>
                 <ul>
                     <li>Thank you for your support! We have something new coming up soon, so do check us out regularly!</li>

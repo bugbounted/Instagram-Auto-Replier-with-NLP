@@ -39,7 +39,7 @@ function IndPost({ comments, postImage }) {
                         {sortedComments.slice(0).reverse().map((comment, index) => {
                             return <div key={index}>
                                 <li >{comment.text} | <span
-                                    style={commentSentiments[index].sentences[0].sentiment.score > 0.5 ? { color: 'green' } : commentSentiments[index].sentences[0].sentiment.score < -0.5 ? { color: "red" } : { color: "#fcbe03" }}>
+                                    style={commentSentiments[index].sentences[0].sentiment.score > 0.5 ? { color: 'green' } : commentSentiments[index].sentences[0].sentiment.score < -0.5 ? { color: "red" } : { color: "#D4AF37" }}>
                                     Sentiment Score : {commentSentiments[index].sentences[0].sentiment.score}</span></li>
                                 <CommentForm comment={comment.text} commentId={comment.id} actualComment={comment.text} />
                             </div>
@@ -48,7 +48,7 @@ function IndPost({ comments, postImage }) {
                 </div>
                 <AutoResponder comments={sortedComments} sentiments={commentSentiments.slice(0).reverse()} />
             </div>
-        </div> : <>Loading.....</>
+        </div> : <div className="loading">Loading.....</div>
 
 }
 
