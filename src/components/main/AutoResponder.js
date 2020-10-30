@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap'
 function AutoResponder({ sentiments, comments }) {
     let responsePositive = []
     let responseNegative = []
-    const [accessToken,] = useState('EAAJbQ5TUIvsBAD8iu34QoWLiJUiBnvxOq2MERsknXzrjpakfYZAz3uSHgclWp9SWFF3ZBRwKEVtPSgRNSKGNBZArJQaPmDbcDmMyWZBF2MZBNc9CZBxstPRNHTwzDBcseOKuG8yJhvygRpW0KpOeH88ZBE4D1uRZCXk2PvL8wbJ5l7kWwqHHw4lNh0eyohEhG6VBIOmqpc92GopH1TqAZCtaZB')
+    const [accessToken,] = useState('EAAJbQ5TUIvsBAMZBVqVDxZAIhNqEDrtUYfZCk7ZAkCJ5KIZC0M4XsL6nKZCklZC1SiZBHJb1La5wEjB7Q5tewWIpxQZBRGxVJi972PmvZCArvSlXuQpAxw5dSr5W2aWJZBJpjPWMM9nfUBgZBZCB804upyCyg72DCZANI6UMHuKui5naxErRDubyqb0KSejdaywxxOMDMMeJCRBjYZA78mGZAcBkvnRb')
     console.log(sentiments)
     console.log(comments)
     const [positiveArray, setPositiveArray] = useState(["Thank you for your support! We have something new coming up soon, so do check us out regularly!", "🔥🔥🔥", "Dont forget to recommend us to your friends!"])
