@@ -14,7 +14,7 @@ function Login() {
     const responseFacebook = async (response) => {
         // const userId = response.id
         // const userData = await API.graphql({ query: { userId } })
-        // console.log(userData)
+        console.log(userData)
         let getFacebookIdUrl = `https://graph.facebook.com/v8.0/me/accounts?access_token=${accessToken}`
         fetch(getFacebookIdUrl)
             .then(data => data.json())
