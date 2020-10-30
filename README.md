@@ -6,6 +6,7 @@ Hosted [here](https://master.d14529d6qyf5xb.amplifyapp.com/) on AWS. (Preview be
 
 A web application targeted for Instagram business and creators account to automatically reply to comments to increase user engagement for Instagram's algorithm.
 Comments from individual posts are passed into Google Clouds Platform's Natural Language Processing (NLP) to determine their sentiments.
+
 Users will be able to define a standard set of postive targeted and negative targeted replies as well as the sentiment value which they want to reply to. (Sentiment value ranges from -1 to 1)
 
 Example:
@@ -28,7 +29,7 @@ Replies can either be cycled through or randomized to reduce the presence of a b
 6. Instagram Graph API
 7. Google Cloud Platform Natural Language API
 
-## Previews
+## Preview list
   * [Facebook login](#facebook-login-retreving-instagram-posts-and-comments)
   * [Replying to positive comments](#replying-to-positive-comments-above-a-specific-sentiment-value)
   * [Replying to negative comments](#replying-to-negative-comments-below-a-specific-sentiment-value)
