@@ -30,17 +30,17 @@ Replies can either be cycled through or randomized to reduce the presence of a b
 
 ## Previews
   * [Facebook login](#facebook-login-retreving-instagram-posts-and-comments)
-  * [Replying to positive comments](#replying-to-positive-comments-with-a-sentiment-value->-0.7)
-  * [Replying to negative comments](#replying-to-negative-comments-with-a-sentiment-value-<--0.5)
+  * [Replying to positive comments](#replying-to-positive-comments-with-a-sentiment-value-more-than-0.7)
+  * [Replying to negative comments](#replying-to-negative-comments-with-a-sentiment-value-less-than--0.5)
   * [Replying to individual comments](#replying-to-individual-comments)
 
 ## Facebook login retreving Instagram Posts and Comments
 ![](./public/login.gif)
 
-## Replying to positive comments with a sentiment value > 0.7
+## Replying to positive comments with a sentiment value more than 0.7
 ![](./public/positive.gif)
 
-## Replying to negative comments with a sentiment value < -0.5
+## Replying to negative comments with a sentiment value less than -0.5
 ![](./public/negative.gif)
 
 ## Replying to individual comments
