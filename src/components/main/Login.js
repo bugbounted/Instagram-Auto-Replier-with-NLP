@@ -32,7 +32,7 @@ function Login() {
                 return instaBizAccUrl
             }).then(url => {
                 getInstaBusinessId(url)
-            })
+            }).catch(error => alert("Instagram business account not configured."))
     }
     const getInstaBusinessId = (url) => {
         fetch(url)
