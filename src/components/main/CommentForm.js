@@ -13,7 +13,7 @@ function CommentForm({ comment, commentId, actualComment }) {
                 setIndComment('')
             })
         } else {
-            alert('Empty input field')
+            alert('Empty input field.')
         }
     }
     const handleChange = (e) => {
