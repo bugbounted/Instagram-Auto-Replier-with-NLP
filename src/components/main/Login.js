@@ -12,7 +12,7 @@ const userTemplate = { userId: '', positiveReplies: [], negativeReplies: [] }
 
 function Login() {
     const [userInfo, setUserInfo] = useState(userTemplate)
-    const [accessToken,] = useState('EAAJbQ5TUIvsBAPSIWZC6eLV7jsqgIidxC9ZArAWgT5h0VC5bsXB9Acl8ZBpworBICGpQn6LHn6vcJC4F7B9ZCpKtatDFnC8APKpbQOXGcV7iOSsNC2DBha4EZCAi0tCZAuMs6M31EcQJyJns7IoRbNLCrDVJdUDP1E7q8FuoF6vd3v9RkwZCg9w8QKG0LqjDdJcZBVA1rhH7gpsfMIwSZAIuA')
+    const [accessToken,] = useState('EAAJbQ5TUIvsBAADq9Unv7gZBqmbxVTfUmGrfdHFr3NOdpqFZBFW21u8Vb96D48hcuY0n8mZCYVP3f1SgU68mqtXFjnSwPnhZAhKRlN17sUwl4i4gTKQLszXPUf8RxFG701AnuDMB3j2XTdb1ARNYHjaQsWpVKatUghuvZAnEnkamAZCmMJ9FgeZBpVZCpOfHlny4QDwF3p5mujX9ZALmO2ZCZCl')
     const [igPostIdArray, setIgPostIdArray] = useState([])
     const responseFacebook = async (response) => {
         // setUserInfo({ ...userInfo, 'userId': response.id })

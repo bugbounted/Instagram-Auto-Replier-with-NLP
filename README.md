@@ -39,12 +39,21 @@ Replies can either be cycled through or randomized to reduce the presence of a b
 ![](./public/login.gif)
 
 ## Replying to positive comments above a specific sentiment value
+
+ * ### Responding to all comments from a post with a sentiment value of > 0.7 
+
 ![](./public/positive.gif)
 
 ## Replying to negative comments below a specific sentiment value
+
+ * ### Responding to all comments from a post with a sentiment value of < -0.5 
+
 ![](./public/negative.gif)
 
 ## Replying to individual comments
+
+ * ### Responding to comments in a standard way 
+
 ![](./public/individual.gif)
 
 ## Credits
