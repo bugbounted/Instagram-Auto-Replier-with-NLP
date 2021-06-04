@@ -49,9 +49,12 @@ function AutoResponder({ sentiments, comments }) {
                 <h2 style={{ textDecoration: "underline" }}>Auto Responder</h2>
                 <span style={{ color: "green" }}>Replied when sentiments > 0.7</span>
                 <ul>
-                    <li>Thank you for your support! We have something new coming up soon, so do check us out regularly!</li>
+                    {positiveArray.map((positiveReply, index) => {
+                        return <li key={index}>{positiveReply}</li>
+                    })}
+                    {/* <li>Thank you for your support! We have something new coming up soon, so do check us out regularly!</li>
                     <li>🔥🔥🔥</li>
-                    <li>Dont forget to recommend us to your friends!</li>
+                    <li>Dont forget to recommend us to your friends!</li> */}
                 </ul>
                 <Button onClick={submitPositiveComments}>Auto reply</Button>
                 <br />
@@ -59,7 +62,10 @@ function AutoResponder({ sentiments, comments }) {
                 <br />
                 <span style={{ color: "red" }}>{badResponse}</span>
                 <ul>
-                    <li>Hi thank you for your feed back. We will strive to improve!</li>
+                    {negativeArray.map((negativeReply, index) => {
+                        return <li key={index}>{negativeReply}</li>
+                    })}
+                    {/* <li>Hi thank you for your feed back. We will strive to improve!</li> */}
                 </ul>
                 <Button onClick={submitNegativeComments}>Auto reply</Button>
             </div>
