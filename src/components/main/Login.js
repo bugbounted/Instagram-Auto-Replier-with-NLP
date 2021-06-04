@@ -5,8 +5,8 @@ import Navbar from './Navbar'
 import AutoResponder from './AutoResponder'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { API } from 'aws-amplify';
-import { getUser } from '../../graphql/queries'
-import { createUser } from '../../graphql/mutations'
+// import { getUser } from '../../graphql/queries'
+// import { createUser } from '../../graphql/mutations'
 
 const userTemplate = { userId: '', positiveReplies: [], negativeReplies: [] }
 
