@@ -2,7 +2,7 @@
 
 ## About
 
-Hosted [here](https://master.d14529d6qyf5xb.amplifyapp.com/) on AWS Amplify. (Preview below)
+Hosted [here](https://master.d6gka8ynhgxry.amplifyapp.com/) on AWS Amplify. (Preview below)
 
 A web application targeted for Instagram business and creators account to automatically reply to comments to increase user engagement for Instagram's algorithm.
 Comments from individual posts are passed into Google Clouds Platform's Natural Language Processing (NLP) to determine their sentiments.
