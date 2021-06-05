@@ -1,0 +1,18 @@
+type User @model {
+  id: ID!
+  name: String!
+  positiveReplies: [PositiveReply] @connection(keyName: "byUser", fields: ["id"])
+  negativeReplies: [NegativeReply] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type PositiveReply @model @key(name: "byUser", fields: ["userId"]) {
+  id: ID!
+  userId: ID!
+  text: String!
+}
+
+type NegativeReply @model @key(name: "byUser", fields: ["userId"]) {
+  id: ID!
+  userId: ID!
+  text: String!
+}

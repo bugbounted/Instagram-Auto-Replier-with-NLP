@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import CommentForm from './CommentForm'
 import AutoResponder from './AutoResponder'
-function IndPost({ comments, postImage }) {
+function IndPost({ comments, postImage, fbToken }) {
     console.log(postImage)
     const [sortedComments, setSortedComments] = useState(comments)
     const [commentSentiments, setCommentSentiments] = useState([])
     useEffect(() => {
         if (sortedComments.length) {
-            let fetchSentimentsUrl = `https://language.googleapis.com/v1/documents:analyzeSentiment?key=AIzaSyAYOP4jg1hjb3v1ntD9OzVw10FweEjOK68`
+            let fetchSentimentsUrl = `https://language.googleapis.com/v1/documents:analyzeSentiment?key=AIzaSyBnd3-OkR6-hcBPcUILtBork99-WgQBLgs`
             let promises = comments.map(post => {
                 return fetch(fetchSentimentsUrl, {
                     method: 'POST',
@@ -41,12 +41,12 @@ function IndPost({ comments, postImage }) {
                                 <li >{comment.text} | <span
                                     style={commentSentiments[index].sentences[0].sentiment.score > 0.5 ? { color: 'green' } : commentSentiments[index].sentences[0].sentiment.score < -0.5 ? { color: "red" } : { color: "#D4AF37" }}>
                                     Sentiment Score : {commentSentiments[index].sentences[0].sentiment.score}</span></li>
-                                <CommentForm comment={comment.text} commentId={comment.id} actualComment={comment.text} />
+                                <CommentForm comment={comment.text} commentId={comment.id} actualComment={comment.text} fbToken={fbToken} />
                             </div>
                         })}
                     </ul>
                 </div>
-                <AutoResponder comments={sortedComments} sentiments={commentSentiments.slice(0).reverse()} />
+                <AutoResponder comments={sortedComments} sentiments={commentSentiments.slice(0).reverse()} fbToken={fbToken} />
             </div>
         </div> : <div className="loading">Loading.....</div>
 

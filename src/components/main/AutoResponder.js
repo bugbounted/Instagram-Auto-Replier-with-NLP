@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { Button } from 'react-bootstrap'
-function AutoResponder({ sentiments, comments }) {
+function AutoResponder({ sentiments, comments, fbToken }) {
     let responsePositive = []
     let responseNegative = []
-    const [accessToken,] = useState('EAAJbQ5TUIvsBAADq9Unv7gZBqmbxVTfUmGrfdHFr3NOdpqFZBFW21u8Vb96D48hcuY0n8mZCYVP3f1SgU68mqtXFjnSwPnhZAhKRlN17sUwl4i4gTKQLszXPUf8RxFG701AnuDMB3j2XTdb1ARNYHjaQsWpVKatUghuvZAnEnkamAZCmMJ9FgeZBpVZCpOfHlny4QDwF3p5mujX9ZALmO2ZCZCl')
     // console.log(sentiments)
     // console.log(comments)
+    const [buttonText, setButtonText] = useState("Auto Reply")
     const [positiveArray, setPositiveArray] = useState(["Thank you for your support! We have something new coming up soon, so do check us out regularly!", "🔥🔥🔥", "Dont forget to recommend us to your friends!"])
     const [negativeArray, setNegativeArray] = useState(["Hi thank you for your feed back. We will strive to improve!"])
     const badResponse = "Replied when sentiments < -0.5"
@@ -17,7 +17,7 @@ function AutoResponder({ sentiments, comments }) {
         })
         if (responsePositive.length) {
             let promises = responsePositive.map((id, index) => {
-                return fetch(`https://graph.facebook.com/v8.0/${comments[id].id}/replies?message=${positiveArray[index % positiveArray.length]}&access_token=${accessToken}`, {
+                return fetch(`https://graph.facebook.com/v10.0/${comments[id].id}/replies?message=${positiveArray[index % positiveArray.length]}&access_token=${fbToken}`, {
                     method: "POST"
                 }).then(promise => promise.json())
             })
@@ -27,6 +27,7 @@ function AutoResponder({ sentiments, comments }) {
         }
     }
     const submitNegativeComments = () => {
+        setButtonText("Please Wait")
         sentiments.forEach((comment, index) => {
             if (comment.documentSentiment.score < -0.5) {
                 responseNegative.push(index)
@@ -34,7 +35,7 @@ function AutoResponder({ sentiments, comments }) {
         })
         if (responseNegative.length) {
             let promises = responseNegative.map((id, index) => {
-                return fetch(`https://graph.facebook.com/v8.0/${comments[id].id}/replies?message=${negativeArray[index % negativeArray.length]}&access_token=${accessToken}`, {
+                return fetch(`https://graph.facebook.com/v10.0/${comments[id].id}/replies?message=${negativeArray[index % negativeArray.length]}&access_token=${fbToken}`, {
                     method: "POST"
                 }).then(promise => promise.json())
             })
@@ -42,35 +43,29 @@ function AutoResponder({ sentiments, comments }) {
         } else {
             alert("No matching comments found")
         }
+        setButtonText("Auto Reply")
     }
     return (
-        <>
-            <div>
-                <h2 style={{ textDecoration: "underline" }}>Auto Responder</h2>
-                <span style={{ color: "green" }}>Replied when sentiments > 0.7</span>
-                <ul>
-                    {positiveArray.map((positiveReply, index) => {
-                        return <li key={index}>{positiveReply}</li>
-                    })}
-                    {/* <li>Thank you for your support! We have something new coming up soon, so do check us out regularly!</li>
-                    <li>🔥🔥🔥</li>
-                    <li>Dont forget to recommend us to your friends!</li> */}
-                </ul>
-                <Button onClick={submitPositiveComments}>Auto reply</Button>
-                <br />
-                <br />
-                <br />
-                <span style={{ color: "red" }}>{badResponse}</span>
-                <ul>
-                    {negativeArray.map((negativeReply, index) => {
-                        return <li key={index}>{negativeReply}</li>
-                    })}
-                    {/* <li>Hi thank you for your feed back. We will strive to improve!</li> */}
-                </ul>
-                <Button onClick={submitNegativeComments}>Auto reply</Button>
-            </div>
-
-        </>
+        <div>
+            <h2 style={{ textDecoration: "underline" }}>Auto Responder</h2>
+            <span style={{ color: "green" }}>Replied when sentiments > 0.7</span>
+            <ul>
+                {positiveArray.map((positiveReply, index) => {
+                    return <li key={index}>{positiveReply}</li>
+                })}
+            </ul>
+            <Button onClick={submitPositiveComments}>{buttonText == "hello"}</Button>
+            <br />
+            <br />
+            <br />
+            <span style={{ color: "red" }}>{badResponse}</span>
+            <ul>
+                {negativeArray.map((negativeReply, index) => {
+                    return <li key={index}>{negativeReply}</li>
+                })}
+            </ul>
+            <Button onClick={submitNegativeComments}>{buttonText}</Button>
+        </div>
     )
 }
 
